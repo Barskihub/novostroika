@@ -32,7 +32,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,7 +44,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579723347180</updated>
-      <workItem from="1579723348646" duration="286000" />
+      <workItem from="1579723348646" duration="423000" />
+      <workItem from="1579723811301" duration="34000" />
     </task>
     <servers />
   </component>
@@ -58,9 +59,9 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="221" y="89" key="SettingsEditor" timestamp="1579723639013">
+    <state x="221" y="89" key="SettingsEditor" timestamp="1579723806004">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579723639013" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579723806004" />
   </component>
 </project>
