@@ -27,12 +27,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,7 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579723347180</updated>
       <workItem from="1579723348646" duration="423000" />
-      <workItem from="1579723811301" duration="34000" />
+      <workItem from="1579723811301" duration="5218000" />
     </task>
     <servers />
   </component>
@@ -59,9 +60,21 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="221" y="89" key="SettingsEditor" timestamp="1579723806004">
+    <state x="507" y="269" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1579729733250">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579723806004" />
+    <state x="507" y="269" key="#com.intellij.ide.macro.MacrosDialog/0.0.1440.900@0.0.1440.900" timestamp="1579729733250" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579725538690">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1579725538690" />
+    <state x="293" y="210" width="852" height="690" key="EditFileWatcherDialog" timestamp="1579729930861">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="293" y="210" width="852" height="690" key="EditFileWatcherDialog/0.0.1440.900@0.0.1440.900" timestamp="1579729930861" />
+    <state x="284" y="63" key="SettingsEditor" timestamp="1579729933371">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="284" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1579729933371" />
   </component>
 </project>
