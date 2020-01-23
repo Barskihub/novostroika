@@ -24,7 +24,7 @@
   margin-right: 60px;
 }
 .header__nav-link {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -82,7 +82,7 @@
   padding: 30px 40px 0;
 }
 .review__title {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -91,7 +91,7 @@
   margin-bottom: 30px;
 }
 .review__p {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -102,7 +102,7 @@
   align-items: center;
 }
 .review__p-cost {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -135,7 +135,7 @@
   margin-bottom: 25px;
 }
 .review__flat-btn {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -163,7 +163,7 @@
   margin-bottom: 25px;
 }
 .review__company-link {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -176,7 +176,7 @@
   background-color: #E94646;
   border-radius: 30px;
   border: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -282,7 +282,7 @@
   margin: 54px auto auto;
 }
 .plans__title {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
@@ -327,7 +327,7 @@
   content: url("../img/arrow-red.svg");
 }
 .plans__item-p {
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -339,7 +339,7 @@
   margin-left: auto;
   border: 1px solid #E94646;
   border-radius: 30px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;

@@ -22,7 +22,7 @@
       margin-right: 60px;
     }
     &-link {
-      font-family: Open Sans;
+      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
@@ -83,7 +83,7 @@
     padding: 30px 40px 0;
   }
   &__title {
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -92,7 +92,7 @@
     margin-bottom: 30px;
   }
   &__p {
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
@@ -102,7 +102,7 @@
     display: flex;
     align-items: center;
     &-cost {
-      font-family: Open Sans;
+      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -135,7 +135,7 @@
     display: flex;
     margin-bottom: 25px;
     &-btn {
-      font-family: Open Sans;
+      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 13px;
@@ -163,7 +163,7 @@
     justify-content: space-between;
     margin-bottom: 25px;
     &-link {
-      font-family: Open Sans;
+      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -177,7 +177,7 @@
     background-color: #E94646;
     border-radius: 30px;
     border: none;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -287,7 +287,7 @@
   max-width: 1360px;
   margin: 54px auto auto;
   &__title {
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -331,7 +331,7 @@
       content: url("../img/arrow-red.svg");
     }
     &-p {
-      font-family: Open Sans;
+      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -343,7 +343,7 @@
         margin-left: auto;
         border: 1px solid #E94646;
         border-radius: 30px;
-        font-family: Open Sans;
+        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
