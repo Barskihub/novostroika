@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 0.4px;
+  outline: none;
 }
 //FONTS
 //Regular
@@ -88,7 +89,7 @@
     border: 2px solid #E94646;
     width: 44px;
     height: 44px;
-    transition: background-color .2s;
+    transition: background-color .2s, border .2s;
     &:hover {
       cursor: pointer;
       background-color: #FF5050;
@@ -97,9 +98,19 @@
       display: block;
       width: 20px;
       height: 1.72px;
-      background: #ffffff;
+      background-color: #ffffff;
       margin: 5px auto;
       transition: all .3s;
+    }
+    &:hover span {
+      background-color: #ffffff;
+    }
+    &-toggle {
+      background-color: #F2F2F2;
+      border-color: transparent;
+    }
+    &-toggle span {
+      background-color: #999999;
     }
     &-toggle &-line-1 {
       transform: rotate(-45deg) translate(-5px, 4px);
@@ -172,6 +183,9 @@
       text-decoration-line: underline;
       color: #E94646;
       font-weight: bold;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   &__flat {
@@ -255,6 +269,18 @@
       position: relative;
       z-index: 0;
       height: 76px;
+      &_vid::after {
+        content: url("../img/play-h.svg");
+        position: absolute;
+        left: 36px;
+        top: 23px;
+        width: 30px;
+        height: 30px;
+        pointer-events: none;
+      }
+      &_vid:hover::after {
+        content: url("../img/red-play.svg");
+      }
       &-img {
         outline: 3px solid transparent;
         transition: outline .3s;
@@ -279,6 +305,10 @@
         left: 36px;
         bottom: 0;
         background-size: 280%;
+        &:hover {
+        background: url("../img/red-arrow-btn.svg") no-repeat center;
+          transform: rotate(-90deg);
+        }
       }
       &-prev {
         background: url("../img/prev-h.svg") no-repeat center;
@@ -286,14 +316,10 @@
         top: 0;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
         background-size: 280%;
-      }
-      &-play {
-        background: url("../img/play-h.svg") no-repeat center;
-        background-size: 100%;
-        position: absolute;
-        left: 36px;
-        top: 23px;
-        pointer-events: none;
+        &:hover {
+          background: url("../img/red-arrow-btn.svg") no-repeat center;
+          transform: rotate(90deg);
+        }
       }
     }
   }
@@ -319,10 +345,17 @@
       &-prev {
         margin-left: 20px;
         background: url("../img/prev-w.svg") no-repeat center;
+        &:hover {
+          background: url("../img/b-red-arrow-btn.svg") no-repeat center;
+        }
       }
       &-next {
         margin-right: 20px;
         background: url("../img/next-w.svg") no-repeat center;
+        &:hover {
+          background: url("../img/b-red-arrow-btn.svg") no-repeat center;
+          transform: rotate(180deg);
+        }
       }
     }
   }
@@ -711,15 +744,18 @@
       transition: outline-color .3s;
       outline: 2px solid transparent;
       &::before {
-        content: url("../img/play-h.svg");
+        content: url("../img/white-play-b.svg");
         position: absolute;
-        left: 144px;
+        left: 139px;
         top: 70px;
         pointer-events: none;
       }
       &:hover {
         cursor: pointer;
         outline: 2px solid #E94646;
+      }
+      &:hover::before {
+        content: url("../img/red-play-b.svg");
       }
     }
     &-link {
