@@ -783,6 +783,7 @@
   width: 201px;
   height: 36px;
   transition: color 0.3s, background-color 0.3s;
+  background-color: #ffffff;
 }
 .desc__text-btn:hover {
   cursor: pointer;
