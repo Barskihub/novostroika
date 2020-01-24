@@ -5,7 +5,47 @@
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 0.4px;
-  font-family: "Open Sans", sans-serif;
+}
+//FONTS
+//Regular
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+//SemiBold
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('../fonts/OpenSans-SemiBold.eot');
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+  url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+//Bold
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+//Extra Bold
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  src: url('../fonts/OpenSans-ExtraBold.eot');
+  src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+  url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 //Header
 .header {
@@ -24,6 +64,7 @@
       margin-right: 60px;
     }
     &-link {
+      font-family: 'Open Sans Semibold';
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
@@ -84,6 +125,7 @@
     padding: 30px 40px 0;
   }
   &__title {
+    font-family: 'Open Sans Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -92,6 +134,7 @@
     margin-bottom: 30px;
   }
   &__p {
+    font-family: 'Open Sans Semibold';
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
@@ -101,6 +144,7 @@
     display: flex;
     align-items: center;
     &-cost {
+      font-family: 'Open Sans Bold';
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -116,6 +160,7 @@
     }
   }
   &__span {
+    font-family: 'Open Sans Bold';
     font-weight: bold;
     font-size: 13px;
     line-height: 18px;
@@ -133,8 +178,8 @@
     display: flex;
     margin-bottom: 25px;
     &-btn {
+      font-family: 'Open Sans Semibold';
       font-style: normal;
-      font-weight: 600;
       font-size: 13px;
       line-height: 18px;
       display: flex;
@@ -163,6 +208,7 @@
     justify-content: space-between;
     margin-bottom: 25px;
     &-link {
+      font-family: 'Open Sans Bold';
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -176,6 +222,7 @@
     background-color: #E94646;
     border-radius: 30px;
     border: none;
+    font-family: 'Open Sans Semibold';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -285,6 +332,7 @@
   max-width: 1360px;
   margin: 54px auto auto;
   &__title {
+    font-family: 'Open Sans Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -328,17 +376,18 @@
       content: url("../img/arrow-red.svg");
     }
     &-p {
+      font-family: 'Open Sans Regular';
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
       color: #444444;
       padding-left: 20px;
-
       &_red {
         margin-right: 90px;
         margin-left: auto;
         border: 1px solid #E94646;
         border-radius: 30px;
+        font-family: 'Open Sans Semibold';
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -351,6 +400,7 @@
       }
     }
     &-span {
+      font-family: 'Open Sans Bold';
       font-weight: bold;
       color: #222222;
     }
@@ -361,6 +411,7 @@
   max-width: 1360px;
   margin: 54px auto auto;
   &__title {
+    font-family: 'Open Sans Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -368,6 +419,7 @@
     margin-bottom: 30px;
   }
   &__subtitle {
+    font-family: 'Open Sans Regular';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -392,6 +444,7 @@
       margin-bottom: 30px;
     }
     &-name {
+      font-family: 'Open Sans Bold';
       margin-bottom: 30px;
       font-style: normal;
       font-weight: bold;
@@ -399,6 +452,7 @@
       color: #444444;
     }
     &-mark {
+      font-family: 'Open Sans Semibold';
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
@@ -406,6 +460,7 @@
       display: flex;
       align-items: center;
       &-num {
+        font-family: 'Open Sans ExtraBold';
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
@@ -438,6 +493,7 @@
   }
   &__middle-cost {
     text-align: center;
+    font-family: 'Open Sans Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -468,6 +524,7 @@
       position: relative;
     }
     &-num {
+      font-family: 'Open Sans ExtraBold';
       font-style: normal;
       font-weight: 800;
       font-size: 24px;
@@ -490,6 +547,7 @@
   max-width: 1360px;
   margin: 54px auto auto;
   &__title {
+    font-family: 'Open Sans Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -504,6 +562,7 @@
   &__article {
     width: 665px;
     &-title {
+      font-family: 'Open Sans Bold';
       font-size: 16px;
       font-weight: bold;
       display: flex;
@@ -527,6 +586,7 @@
       }
     }
     &-item {
+      font-family: 'Open Sans Regular';
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -550,6 +610,7 @@
   &__final {
     margin-top: 90px;
     &-title {
+      font-family: 'Open Sans Bold';
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -557,6 +618,7 @@
       margin-bottom: 20px;
     }
     &-p {
+      font-family: 'Open Sans Regular';
       font-size: 14px;
       color: #444444;
       display: flex;
@@ -580,6 +642,7 @@
   max-width: 1360px;
   margin: 54px auto auto;
   &__title {
+    font-family: 'Open Sans Bold';
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -596,6 +659,7 @@
     align-items: center;
     margin-right: 30px;
     &-name {
+      font-family: 'Open Sans Bold';
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -603,6 +667,7 @@
       color: #444444;
     }
     &-post {
+      font-family: 'Open Sans Semibold';
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
@@ -610,6 +675,7 @@
       margin-top: 20px;
     }
     &-btn {
+      font-family: 'Open Sans Semibold';
       width: 320px;
       background-color: #E94646;
       border-radius: 30px;
@@ -657,6 +723,7 @@
       }
     }
     &-link {
+      font-family: 'Open Sans Bold';
       margin-right: auto;
       font-weight: bold;
       font-size: 13px;
@@ -671,6 +738,7 @@
   }
   &__text {
     &-title {
+      font-family: 'Open Sans Bold';
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -678,6 +746,7 @@
       margin-bottom: 20px;
     }
     &-p {
+      font-family: 'Open Sans Regular';
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
@@ -685,6 +754,7 @@
       margin-bottom: 30px;
     }
     &-btn {
+      font-family: 'Open Sans Semibold';
       font-style: normal;
       font-weight: 600;
       font-size: 14px;
