@@ -479,4 +479,221 @@
   margin-left: 10px;
 }
 
+.benefits {
+  max-width: 1360px;
+  margin: 54px auto auto;
+}
+.benefits__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.benefits__inner {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.benefits__article {
+  width: 665px;
+}
+.benefits__article-title {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.benefits__article-title::before {
+  content: url("../img/b-m.svg");
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.benefits__article-title_img::before {
+  content: url("../img/b-p.svg");
+}
+.benefits__article-list {
+  list-style-type: none;
+}
+.benefits__article-list :last-child {
+  border: none;
+}
+.benefits__article-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E3E3E3;
+  position: relative;
+  padding-left: 15px;
+}
+.benefits__article-item::before {
+  content: url("../img/b-li-red.svg");
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.benefits__article-item_green::before {
+  content: url("../img/b-li-green.svg");
+}
+.benefits__final {
+  margin-top: 90px;
+}
+.benefits__final-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.benefits__final-p {
+  font-size: 14px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 15px;
+  width: 90%;
+}
+.benefits__final-p::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  background: #E94646;
+  left: 0;
+}
+
+.desc {
+  max-width: 1360px;
+  margin: 54px auto auto;
+}
+.desc__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 60px;
+}
+.desc__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.desc__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+.desc__content-name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 30px;
+  color: #444444;
+}
+.desc__content-post {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #666666;
+  margin-top: 20px;
+}
+.desc__content-btn {
+  width: 320px;
+  background-color: #E94646;
+  border-radius: 30px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.desc__content-btn:hover {
+  cursor: pointer;
+  background-color: #FF5050;
+}
+.desc__content-btn-img {
+  margin-right: 10px;
+}
+.desc__content-video {
+  margin-top: 20px;
+  position: relative;
+  width: 318px;
+  height: 180px;
+  transition: outline-color 0.3s;
+  outline: 2px solid transparent;
+}
+.desc__content-video::before {
+  content: url("../img/play-h.svg");
+  position: absolute;
+  left: 144px;
+  top: 70px;
+  pointer-events: none;
+}
+.desc__content-video:hover {
+  cursor: pointer;
+  outline: 2px solid #E94646;
+}
+.desc__content-link {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 13px;
+  color: #E94646;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: border 0.3s;
+}
+.desc__content-link:hover {
+  border-bottom: 1px solid #E94646;
+}
+.desc__text-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+.desc__text-p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 30px;
+}
+.desc__text-btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #E94646;
+  border: 1px solid #E94646;
+  border-radius: 30px;
+  width: 201px;
+  height: 36px;
+  transition: color 0.3s, background-color 0.3s;
+}
+.desc__text-btn:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #E94646;
+}
+
 /*# sourceMappingURL=style.css.map */
