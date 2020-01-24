@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  letter-spacing: 0.4px;
+  font-family: "Open Sans", sans-serif;
 }
 //Header
 .header {
@@ -22,7 +24,6 @@
       margin-right: 60px;
     }
     &-link {
-      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 15px;
@@ -83,7 +84,6 @@
     padding: 30px 40px 0;
   }
   &__title {
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -92,7 +92,6 @@
     margin-bottom: 30px;
   }
   &__p {
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
@@ -102,7 +101,6 @@
     display: flex;
     align-items: center;
     &-cost {
-      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -135,7 +133,6 @@
     display: flex;
     margin-bottom: 25px;
     &-btn {
-      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 13px;
@@ -147,13 +144,16 @@
       padding: 15px 8px;
       outline: 1px solid #DEDEDE;
       border: none;
-      transition: outline-color .2s, color .2s;
+      transition: outline-color .2s, color .2s, background-color .2s;
       background: none;
       margin-right: 8px;
-      &:hover {
+      &_active {
         outline: 2px solid #E94646;
-        cursor: pointer;
         color: #E94646;
+      }
+      &:hover {
+        background: #F2F2F2;
+        cursor: pointer;
       }
     }
   }
@@ -163,7 +163,6 @@
     justify-content: space-between;
     margin-bottom: 25px;
     &-link {
-      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -177,7 +176,6 @@
     background-color: #E94646;
     border-radius: 30px;
     border: none;
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -287,7 +285,6 @@
   max-width: 1360px;
   margin: 54px auto auto;
   &__title {
-    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -331,7 +328,6 @@
       content: url("../img/arrow-red.svg");
     }
     &-p {
-      font-family: "Open Sans", sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -343,7 +339,6 @@
         margin-left: auto;
         border: 1px solid #E94646;
         border-radius: 30px;
-        font-family: "Open Sans", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -358,6 +353,135 @@
     &-span {
       font-weight: bold;
       color: #222222;
+    }
+  }
+}
+//rating
+.rating {
+  max-width: 1360px;
+  margin: 54px auto auto;
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #222222;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #444444;
+  }
+  &__table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    &-item {
+      width: 202px;
+      height: 220px;
+      background: #FFFFFF;
+      border: 1px solid #E3E3E3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &-img {
+      margin-bottom: 30px;
+    }
+    &-name {
+      margin-bottom: 30px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      color: #444444;
+    }
+    &-mark {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      color: #444444;
+      display: flex;
+      align-items: center;
+      &-num {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50px;
+        margin-left: 10px;
+        &_red {
+          border: 3px solid #E94646;
+          color: #E94646;
+        }
+        &_orange {
+          border: 3px solid #F38445;
+          color: #F38445;
+        }
+        &_yellow {
+          border: 3px solid #F3BA25;
+          color: #F3BA25;
+        }
+        &_green {
+          border: 3px solid #69CA60;
+          color: #69CA60;
+        }
+      }
+    }
+  }
+  &__middle-cost {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 31px;
+    padding-right: 31px;
+    background-color: #ffffff;
+    &:after {
+      content: "";
+      width: 100%;
+      left: 50%;
+      top: 28px;
+      transform: translateX(-50%);
+      z-index: -1;
+      height: 1px;
+      background: #E3E3E3;
+      position: absolute;
+    }
+    &-wrap {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+      justify-content: center;
+      position: relative;
+    }
+    &-num {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 33px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      color: #F3BA25;
+      border: 3px solid #F3BA25;
+      margin-left: 10px;
     }
   }
 }
