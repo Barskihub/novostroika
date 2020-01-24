@@ -813,3 +813,79 @@
     }
   }
 }
+//feature
+.feature {
+  max-width: 1360px;
+  margin: 54px auto auto;
+  &__title {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 665px;
+    margin-top: 40px;
+    &-title {
+      font-family: 'Open Sans Bold';
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      &::before {
+        content: url("../img/f-house.svg");
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+      }
+      &_flats::before {
+        content: url("../img/f-flats.svg");
+      }
+      &_tree::before {
+        content: url("../img/f-tree.svg");
+      }
+      &_parking::before {
+        content: url("../img/f-parking.svg");
+      }
+      &_infr::before {
+        content: url("../img/f-infr.svg");
+      }
+      &_sec::before {
+        content: url("../img/f-sec.svg");
+      }
+    }
+    &-list {
+      list-style-type: none;
+        border-bottom: 1px solid #E3E3E3;
+      &-item {
+        border: 1px solid #E3E3E3;
+        border-bottom: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 17px;
+        transition: all .3s;
+        &:hover {
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+        }
+      }
+      &-p {
+        font-family: "Open Sans Semibold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        color: #222222;
+        &_gray {
+          color: #666666;
+        }
+      }
+    }
+  }
+}
