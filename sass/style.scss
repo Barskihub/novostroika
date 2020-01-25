@@ -1295,3 +1295,213 @@
     }
   }
 }
+//Build
+.build {
+  max-width: 1360px;
+  margin: 54px auto auto;
+  &__title {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #222222;
+    margin-bottom: 30px;
+  }
+  &__form {
+    display: flex;
+    & label {
+      position: relative;
+      &::after {
+        content: url("../img/arrow-gray.svg");
+        position: absolute;
+        right: 40px;
+        top: 13px;
+        pointer-events: none;
+      }
+    }
+    &-select {
+      margin-right: 20px;
+      width: 160px;
+      height: 40px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      text-align: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      border: 1px solid #DEDEDE;
+      background-color: #FFFFFF;
+      border-radius: 0;
+      font-family: "Open Sans Semibold";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      color: #444444;
+      position: relative;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  &__box {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    &-img {
+      width: 317px;
+    }
+  }
+  &__btn {
+    font-family: "Open Sans bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    color: #E94646;
+    border: none;
+    display: block;
+    margin: 40px auto auto;
+    border-bottom: 1px solid  transparent;
+    transition: border .3s;
+    background-color: #FFFFFF;
+    width: 180px;
+    &:hover {
+      border-bottom: 1px solid #E94646;
+      cursor: pointer;
+    }
+  }
+}
+//Feedback
+.feedback {
+  max-width: 1360px;
+  margin: 54px auto auto;
+  &__title {
+    font-family: 'Open Sans Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #222222;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    width: 205px;
+    height: 44px;
+    font-family: "Open Sans bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ffffff;
+    color: #E94646;
+    border: 1px solid #E94646;
+    border-radius: 30px 0 0 30px;
+    transition: background-color .3s, color .3s;
+    &_active, &:hover {
+      color: #FFFFFF;
+      background-color: #E94646;
+      cursor: pointer;
+    }
+    &-wrap {
+      text-align: center;
+      margin: 60px auto auto;
+      display: flex;
+      justify-content: center;
+      & :last-child {
+        border-radius: 0 30px 30px 0;
+      }
+    }
+  }
+  &__box {
+    margin-top: 60px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    &-inner {
+      margin-left: 20px;
+    }
+    &-name {
+      font-family: "Open Sans Semibold";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      color: #222222;
+      margin-bottom: 16px;
+      height: 12px;
+    }
+    &-date {
+      font-family: "Open Sans Regular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      color: #999999;
+      margin-bottom: 20px;
+      height: 10px;
+    }
+    &-desc {
+      font-family: "Open Sans Regular";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      color: #333333;
+      height: 10px;
+    }
+  }
+  &__btn {
+    &-more {
+      font-family: "Open Sans bold";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 18px;
+      display: block;
+      color: #E94646;
+      border: none;
+      transition: border .3s;
+      border-bottom: 1px solid transparent;
+      margin: 40px auto auto;
+      background-color: #ffffff;
+      &:hover {
+        border-bottom: 1px solid #E94646;
+        cursor: pointer;
+      }
+    }
+    &-call {
+      font-family: "Open Sans Semibold";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #E94646;
+      width: 353px;
+      height: 60px;
+      border: 1px solid #E94646;
+      border-radius: 30px;
+      margin: 40px auto auto;
+      transition: color .3s, background-color .3s;
+      background-color: #ffffff;
+
+      &::before {
+        content: url("../img/pen.svg");
+        margin-top: 2px;
+        margin-right: 10px;
+      }
+      &:hover {
+        color: #ffffff;
+        background-color: #E94646;
+        cursor: pointer;
+      }
+      &:hover::before {
+        content: url("../img/pen-w.svg");
+      }
+    }
+  }
+}

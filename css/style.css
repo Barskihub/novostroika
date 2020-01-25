@@ -1263,4 +1263,211 @@
   content: url("../img/chart-q-w.svg");
 }
 
+.build {
+  max-width: 1360px;
+  margin: 54px auto auto;
+}
+.build__title {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.build__form {
+  display: flex;
+}
+.build__form label {
+  position: relative;
+}
+.build__form label::after {
+  content: url("../img/arrow-gray.svg");
+  position: absolute;
+  right: 40px;
+  top: 13px;
+  pointer-events: none;
+}
+.build__form-select {
+  margin-right: 20px;
+  width: 160px;
+  height: 40px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #DEDEDE;
+  background-color: #FFFFFF;
+  border-radius: 0;
+  font-family: "Open Sans Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #444444;
+  position: relative;
+}
+.build__form-select:hover {
+  cursor: pointer;
+}
+.build__box {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.build__box-img {
+  width: 317px;
+}
+.build__btn {
+  font-family: "Open Sans bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  color: #E94646;
+  border: none;
+  display: block;
+  margin: 40px auto auto;
+  border-bottom: 1px solid transparent;
+  transition: border 0.3s;
+  background-color: #FFFFFF;
+  width: 180px;
+}
+.build__btn:hover {
+  border-bottom: 1px solid #E94646;
+  cursor: pointer;
+}
+
+.feedback {
+  max-width: 1360px;
+  margin: 54px auto auto;
+}
+.feedback__title {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.feedback__btn {
+  width: 205px;
+  height: 44px;
+  font-family: "Open Sans bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  color: #E94646;
+  border: 1px solid #E94646;
+  border-radius: 30px 0 0 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.feedback__btn_active, .feedback__btn:hover {
+  color: #FFFFFF;
+  background-color: #E94646;
+  cursor: pointer;
+}
+.feedback__btn-wrap {
+  text-align: center;
+  margin: 60px auto auto;
+  display: flex;
+  justify-content: center;
+}
+.feedback__btn-wrap :last-child {
+  border-radius: 0 30px 30px 0;
+}
+.feedback__box {
+  margin-top: 60px;
+}
+.feedback__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.feedback__item-inner {
+  margin-left: 20px;
+}
+.feedback__item-name {
+  font-family: "Open Sans Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 16px;
+  height: 12px;
+}
+.feedback__item-date {
+  font-family: "Open Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #999999;
+  margin-bottom: 20px;
+  height: 10px;
+}
+.feedback__item-desc {
+  font-family: "Open Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #333333;
+  height: 10px;
+}
+.feedback__btn-more {
+  font-family: "Open Sans bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  display: block;
+  color: #E94646;
+  border: none;
+  transition: border 0.3s;
+  border-bottom: 1px solid transparent;
+  margin: 40px auto auto;
+  background-color: #ffffff;
+}
+.feedback__btn-more:hover {
+  border-bottom: 1px solid #E94646;
+  cursor: pointer;
+}
+.feedback__btn-call {
+  font-family: "Open Sans Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #E94646;
+  width: 353px;
+  height: 60px;
+  border: 1px solid #E94646;
+  border-radius: 30px;
+  margin: 40px auto auto;
+  transition: color 0.3s, background-color 0.3s;
+  background-color: #ffffff;
+}
+.feedback__btn-call::before {
+  content: url("../img/pen.svg");
+  margin-top: 2px;
+  margin-right: 10px;
+}
+.feedback__btn-call:hover {
+  color: #ffffff;
+  background-color: #E94646;
+  cursor: pointer;
+}
+.feedback__btn-call:hover::before {
+  content: url("../img/pen-w.svg");
+}
+
 /*# sourceMappingURL=style.css.map */

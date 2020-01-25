@@ -795,15 +795,20 @@
                 <form action="#" class="credit__cl-form">
                     <label for="input-sum" class="credit__cl-form-label">
                         Сумма кредита
-                        <input type="number" class="credit__cl-form-input" id="input-sum" placeholder="Руб." required>
+                        <input type="number"  name="credit" class="credit__cl-form-input" id="input-sum"
+                               placeholder="Руб."
+                               required>
                     </label>
                     <label for="input-proc" class="credit__cl-form-label">
                         Ставка
-                        <input type="number" class="credit__cl-form-input" id="input-proc" placeholder="%" required>
+                        <input type="number"  name="credit" class="credit__cl-form-input" id="input-proc"
+                               placeholder="%"
+                               required>
                     </label>
                     <label for="input-time" class="credit__cl-form-label">
                         Срок
-                        <input type="number" class="credit__cl-form-input" id="input-time" placeholder="Кол-во лет"
+                        <input type="number"  name="credit" class="credit__cl-form-input" id="input-time"
+                               placeholder="Кол-во лет"
                                required>
                     </label>
                     <div class="credit__cl-form-inner">
@@ -916,6 +921,127 @@
                     </button>
                 </div>
             </div>
+        </section>
+        <section class="build">
+            <h2 class="build__title">
+                Ход строительства ЖК «Граф Орлов»
+            </h2>
+            <form action="" class="build__form">
+                <label for="build-year">
+                <select name="build-form" id="build-year" class="build__form-select">
+                    <option value="2019">
+                        2019
+                    </option>
+                    <option value="2018">
+                        2018
+                    </option>
+                    <option value="2017">
+                        2017
+                    </option>
+                </select>
+            </label>
+                <label for="build-month">
+                    <select name="build-form" id="build-month" class="build__form-select">
+                        <option value="1">
+                            Январь
+                        </option>
+                        <option value="2">
+                            Февраль
+                        </option>
+                        <option value="3">
+                            Март
+                        </option>
+                        <option value="4">
+                            Апрель
+                        </option>
+                        <option value="5">
+                            Май
+                        </option>
+                        <option value="6">
+                            Июнь
+                        </option>
+                        <option value="7">
+                            Июль
+                        </option>
+                        <option value="8">
+                            Август
+                        </option>
+                        <option value="9">
+                            Сентябрь
+                        </option>
+                        <option value="10">
+                            Октябрь
+                        </option>
+                        <option value="11">
+                            Ноябрь
+                        </option>
+                        <option value="12">
+                            Декабрь
+                        </option>
+                    </select>
+                </label>
+            </form>
+            <div class="build__box">
+                <img src="img/box-1.svg" alt="Изображение стройки дома" class="build__box-img">
+                <img src="img/box-2.svg" alt="Изображение стройки дома" class="build__box-img">
+                <img src="img/box-3.svg" alt="Изображение стройки дома" class="build__box-img">
+                <img src="img/box-4.svg" alt="Изображение стройки дома" class="build__box-img">
+            </div>
+            <div class="build__btn">
+                Показать все фотографии
+            </div>
+        </section>
+        <section class="feedback">
+            <h2 class="feedback__title">
+                Отзывы о ЖК «Граф Орлов»
+            </h2>
+            <div class="feedback__btn-wrap">
+                <button class="feedback__btn feedback__btn_active">
+                    О комплексе
+                </button>
+                <button class="feedback__btn">
+                    О застройщике
+                </button>
+            </div>
+            <div class="feedback__box">
+                <div class="feedback__item">
+                    <img src="img/avatar.svg" alt="Изображение" class="feedback__item-img">
+                    <div class="feedback__item-inner">
+                        <p class="feedback__item-name">Анастасия</p>
+                        <p class="feedback__item-date"><span class="feedback__item-date-d">02.12.2019</span> в <span
+                                class="feedback__item-date-t">23:30</span></p>
+                        <p class="feedback__item-desc">
+                            Стены тонкие,все слышно. Куча коридоров,можно запутаться. Отлично, что рядом с метро....
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <img src="img/avatar.svg" alt="Изображение" class="feedback__item-img">
+                    <div class="feedback__item-inner">
+                        <p class="feedback__item-name">Юлия</p>
+                        <p class="feedback__item-date"><span class="feedback__item-date-d">02.12.2019</span> в <span
+                                class="feedback__item-date-t">23:30</span></p>
+                        <p class="feedback__item-desc">
+                            Управляющая компания. Это ужас....
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback__item">
+                    <img src="img/avatar.svg" alt="Изображение" class="feedback__item-img">
+                    <div class="feedback__item-inner">
+                        <p class="feedback__item-name">Андрей А</p>
+                        <p class="feedback__item-date"><span class="feedback__item-date-d">02.12.2019</span> в <span
+                                class="feedback__item-date-t">23:30</span></p>
+                        <p class="feedback__item-desc">
+                            Шумно от ремонтов. Лифт часто застревает, а утром как в маршрутке в нем едешь. Из плюсов только, что квартира довольно просторная с высокими потолками...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="feedback__btn-more">
+                Показать все отзывы
+            </button>
+            <button class="feedback__btn-call">Добавить отзыв</button>
         </section>
     </main>
 </div>
