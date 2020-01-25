@@ -1147,6 +1147,7 @@
   margin: 40px auto auto;
   border-bottom: 1px solid transparent;
   transition: border 0.3s;
+  background-color: #FFFFFF;
 }
 .credit__btn:hover {
   border-bottom: 1px solid #E94646;
@@ -1165,6 +1166,101 @@
 .map__content-img {
   object-fit: contain;
   width: 100vw;
+}
+
+.chart {
+  max-width: 1360px;
+  margin: 54px auto auto;
+}
+.chart__title {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.chart__flat {
+  display: flex;
+  margin-bottom: 25px;
+}
+.chart__flat-btn {
+  font-family: "Open Sans Semibold";
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #444444;
+  padding: 15px 18px;
+  outline: 1px solid #DEDEDE;
+  border: none;
+  transition: outline-color 0.2s, color 0.2s, background-color 0.2s;
+  background: none;
+  margin-right: 8px;
+}
+.chart__flat-btn_active {
+  outline: 2px solid #E94646;
+  color: #E94646;
+}
+.chart__flat-btn:hover {
+  background: #F2F2F2;
+  cursor: pointer;
+}
+.chart__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.chart__desc-img {
+  margin-bottom: 30px;
+}
+.chart__desc-title {
+  font-family: "Open Sans bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #222222;
+  margin-bottom: 30px;
+}
+.chart__desc-p {
+  font-family: "Open Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #444444;
+  margin-bottom: 30px;
+  width: 530px;
+}
+.chart__desc-btn {
+  width: 353px;
+  height: 60px;
+  background-color: #FFFFFF;
+  border: 1px solid #E94646;
+  border-radius: 30px;
+  font-family: "Open Sans Semibold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E94646;
+  transition: all 0.3s;
+}
+.chart__desc-btn::before {
+  content: url("../img/chart-q.svg");
+  margin-right: 10px;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+.chart__desc-btn:hover {
+  background-color: #E94646;
+  color: #ffffff;
+  cursor: pointer;
+}
+.chart__desc-btn:hover::before {
+  content: url("../img/chart-q-w.svg");
 }
 
 /*# sourceMappingURL=style.css.map */
