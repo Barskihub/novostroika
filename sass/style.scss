@@ -1352,21 +1352,23 @@
     }
   }
   &__btn {
-    font-family: "Open Sans bold";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 13px;
-    color: #E94646;
-    border: none;
-    display: block;
-    margin: 40px auto auto;
-    border-bottom: 1px solid  transparent;
-    transition: border .3s;
-    background-color: #FFFFFF;
-    width: 180px;
-    &:hover {
-      border-bottom: 1px solid #E94646;
-      cursor: pointer;
+    &-more {
+      font-family: "Open Sans bold";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 18px;
+      display: block;
+      color: #E94646;
+      border: none;
+      transition: border .3s;
+      border-bottom: 1px solid transparent;
+      margin: 40px auto auto;
+      background-color: #ffffff;
+      &:hover {
+        border-bottom: 1px solid #E94646;
+        cursor: pointer;
+      }
     }
   }
 }

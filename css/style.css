@@ -1319,21 +1319,21 @@
 .build__box-img {
   width: 317px;
 }
-.build__btn {
+.build__btn-more {
   font-family: "Open Sans bold";
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
+  line-height: 18px;
+  display: block;
   color: #E94646;
   border: none;
-  display: block;
-  margin: 40px auto auto;
-  border-bottom: 1px solid transparent;
   transition: border 0.3s;
-  background-color: #FFFFFF;
-  width: 180px;
+  border-bottom: 1px solid transparent;
+  margin: 40px auto auto;
+  background-color: #ffffff;
 }
-.build__btn:hover {
+.build__btn-more:hover {
   border-bottom: 1px solid #E94646;
   cursor: pointer;
 }
