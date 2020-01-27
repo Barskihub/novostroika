@@ -21,6 +21,7 @@ const sliderH = () => {
     let sliderHList = document.querySelector(".slider-h__list");
     let sliderW = document.querySelector(".slider-w");
     let sliderWYouTube = document.querySelector(".slider-w-video");
+    let sliderVideoFrame = document.querySelector(".slider-w-video-if");
 
     const btnHnext = document.querySelector(".slider-h__btn-next");
     const btnHprev = document.querySelector(".slider-h__btn-prev");
@@ -70,6 +71,14 @@ const sliderH = () => {
     for (let i = 0; i < sliderHItemsVideo.length; i++) {
             sliderHItemsVideo[i].addEventListener("click", ()=>{
               sliderWYouTube.classList.add("slider-w-video_on");
+
+              if (sliderHItemsVideo[i].classList.contains("video_1")) {
+                  sliderVideoFrame.src="https://www.youtube.com/embed/NqXFHeaxN7w";
+                }
+
+              if (sliderHItemsVideo[i].classList.contains("video_2")) {
+                  sliderVideoFrame.src="https://www.youtube.com/embed/wjPrS76cMDY";
+              }
             });
         }
 
