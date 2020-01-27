@@ -72,13 +72,16 @@ const sliderH = () => {
     for (let i = 0; i < sliderHItemsVideo.length; i++) {
             sliderHItemsVideo[i].addEventListener("click", ()=>{
               sliderWYouTube.classList.add("slider-w-video_on");
+              //Ссылки на видео
+              let link1 = "https://www.youtube.com/embed/NqXFHeaxN7w";
+              let link2 = "https://www.youtube.com/embed/wjPrS76cMDY";
               //    Первое видео
               if (sliderHItemsVideo[i].classList.contains("video_1")) {
-                  sliderVideoFrame.src="https://www.youtube.com/embed/NqXFHeaxN7w?autoplay=1&loop=1&&playlist=Video_ID";
+                  sliderVideoFrame.src=link1+"?autoplay=1&loop=1&&playlist=Video_ID";
                 }
               //  Второе видео
               if (sliderHItemsVideo[i].classList.contains("video_2")) {
-                  sliderVideoFrame.src="https://www.youtube.com/embed/wjPrS76cMDY?autoplay=1&loop=1&&playlist=Video_ID";
+                  sliderVideoFrame.src=link2+"?autoplay=1&loop=1&&playlist=Video_ID";
               }
             });
         }
