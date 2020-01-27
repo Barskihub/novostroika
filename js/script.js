@@ -1,21 +1,28 @@
 // Burger Actions
 const burgerMotion = () => {
     const burger = document.querySelector(".header__btn");
+    const menu = document.querySelector(".header__menu");
 
     const BurgerMotion = () => {
         // Анимация бургера
         burger.classList.toggle("header__btn-toggle");
     };
 
+    const menuMotion = () => {
+        menu.classList.toggle("header__menu_active");
+    };
+
     burger.addEventListener("click", () => {
         BurgerMotion();
+        menuMotion();
     });
-};
 
+
+};
 burgerMotion();
 
 //Slider
-const sliderH = () => {
+const sliderReview = () => {
     let sliderHItems = document.querySelectorAll(".slider-h__item");
     let sliderHItemsVideo = document.querySelectorAll(".slider-h__item_vid");
     let sliderHList = document.querySelector(".slider-h__list");
@@ -55,6 +62,20 @@ const sliderH = () => {
         }
     };
 
+    //Загрзка видео с кнопок
+    const videoControl = () => {
+        if (backStep === 2) {
+            sliderVideoFrame.src=link1+"?autoplay=1&loop=1&&playlist=Video_ID";
+            sliderWYouTube.classList.add("slider-w-video_on");
+        } else if (backStep === 4) {
+            sliderVideoFrame.src=link2+"?autoplay=1&loop=1&&playlist=Video_ID";
+            sliderWYouTube.classList.add("slider-w-video_on");
+        } else {
+            sliderVideoFrame.src="";
+            sliderWYouTube.classList.remove("slider-w-video_on");
+        }
+    };
+
     const sliderMotionWBack = () => {
         sliderW.style.backgroundImage = `url("./img/h${backStep = backStep - 1}.png")`;
 
@@ -62,41 +83,34 @@ const sliderH = () => {
             backStep = 0;
             sliderW.style.backgroundImage = `url("./img/h0.png")`
         }
+        videoControl();
     };
 
     const sliderMotionWForward = () => {
         sliderW.style.backgroundImage = `url("./img/h${backStep = backStep + 1}.png")`;
-
+        //Перемотка на начало
         if (backStep === 6) {
             backStep = 0;
             sliderW.style.backgroundImage = `url("./img/h0.png")`
         }
-
-        if (backStep === 2) {
-            sliderWYouTube.classList.add("slider-w-video_on");
-            sliderVideoFrame.src=link1+"?autoplay=1&loop=1&&playlist=Video_ID";
-        }
+        videoControl();
     };
 
-    // Включение и выключение видео и настройка пути
+    // Включение и выключение видео и настройка пути c превью
     for (let i = 0; i < sliderHItemsVideo.length; i++) {
             sliderHItemsVideo[i].addEventListener("click", ()=>{
-              sliderWYouTube.classList.add("slider-w-video_on");
 
                   //    Первое видео
                   if (sliderHItemsVideo[i].classList.contains("video_1")) {
                       sliderVideoFrame.src=link1+"?autoplay=1&loop=1&&playlist=Video_ID";
+                      sliderWYouTube.classList.add("slider-w-video_on");
                   }
                   //  Второе видео
                   if (sliderHItemsVideo[i].classList.contains("video_2")) {
                       sliderVideoFrame.src=link2+"?autoplay=1&loop=1&&playlist=Video_ID";
+                      sliderWYouTube.classList.add("slider-w-video_on");
                   }
             });
-
-            // btnWnext.addEventListener("click", ()=> {
-            //     sliderWYouTube.classList.add("slider-w-video_on");
-            //
-            // })
         }
 
     //Действия с кнопками
@@ -123,7 +137,52 @@ const sliderH = () => {
     }
     console.log(sliderHItems);
 };
+sliderReview();
 
-sliderH();
+//SliderHouses
+const sliderHouse = () => {
+    const houseSlider = document.querySelector(".house__slider-inner");
+    const houseSliderBtnLeft = document.querySelector(".house__slider-btn-prev");
+    const houseSliderBtnRight = document.querySelector(".house__slider-btn-next");
+
+    let houseSlides = document.querySelectorAll(".house__card").length;
+    let step = 0;
+
+
+    houseSliderBtnRight.addEventListener("click", () => {
+        step = step - 455;
+        houseSlider.style.left = step+'px';
+
+        if (step === -910) {
+            step = 0;
+            houseSlider.style.left = step +'px';
+        }
+    });
+
+    houseSliderBtnLeft.addEventListener("click", () => {
+        step = step + 455;
+        houseSlider.style.left = step+'px';
+
+        if (step === 455) {
+            step = -455;
+            houseSlider.style.left = step +'px';
+        }
+    });
+};
+sliderHouse();
+
+//PLansShow
+const plans = () => {
+    const plansItems = document.querySelectorAll(".plans__item");
+    const plansInfo = document.querySelectorAll(".plans__info");
+
+    for (let i = 0; i < plansItems.length; i++) {
+        plansItems[i].addEventListener("click", () => {
+            plansInfo[i].classList.toggle("plans__info_active");
+            plansItems[i].classList.toggle("plans__item_active");
+        });
+    }
+};
+plans();
 
 

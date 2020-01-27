@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
 }
 //FONTS
 //Regular
@@ -119,6 +118,43 @@
     }
     &-toggle &-line-3 {
       transform: rotate(45deg) translate(-6px, -4px);
+    }
+  }
+  &__menu {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    z-index: -1;
+    opacity: 0;
+    transition: all .4s ease;
+    tab-index: none;
+    &_active {
+      z-index: 1;
+      opacity: 1;
+      tab-index: 1;
+    }
+    &-list {
+      list-style-type: none;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    }
+    &-link {
+      font-family: "Open Sans Semibold";
+      font-style: normal;
+      font-size: 13px;
+      color: #222222;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      width: 225px;
+      height: 50px;
+      padding-left: 20px;
+      background-color: #FFFFFF;
+      transition: all .3s ease;
+      &:hover {
+        color: #FFFFFF;
+        background-color: #E94646;
+      }
     }
   }
 }
@@ -369,6 +405,7 @@
       &-prev {
         margin-left: 20px;
         background: url("../img/prev-w.svg") no-repeat center;
+          z-index: 1;
         &:hover {
           background: url("../img/b-red-arrow-btn.svg") no-repeat center;
         }
@@ -376,6 +413,7 @@
       &-next {
         margin-right: 20px;
         background: url("../img/next-w.svg") no-repeat center;
+        z-index: 1;
         &:hover {
           background: url("../img/b-red-arrow-btn.svg") no-repeat center;
           transform: rotate(180deg);
@@ -460,6 +498,195 @@
       font-family: 'Open Sans Bold';
       font-weight: bold;
       color: #222222;
+    }
+  }
+  &__info {
+    width: 1360px;
+    display: flex;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease;
+    &_active {
+      height: 646px;
+    }
+    &-table {
+      width: 695px;
+      &-inner {
+        height: 486px;
+        overflow-y: scroll;
+      }
+    }
+    &-row {
+      display: flex;
+      border-bottom: 1px solid #EEEEEE;
+      transition: box-shadow .3s;
+      & :nth-child(1) {
+        width: 116px;
+        height: 50px;
+      }
+      & :nth-child(2) {
+        width: 220px;
+        justify-content: left;
+      }
+      & :nth-child(3) {
+        width: 50px;
+      }
+      & :nth-child(4) {
+        width: 190px;
+      }
+      & :nth-child(5) {
+        width: 109px;
+      }
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+      }
+      &_active {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+      }
+    }
+    &-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      font-family: "Open Sans Regular";
+      font-style: normal;
+      font-size: 14px;
+      color: #444444;
+      height: 80px;
+      &-like {
+        &-btn {
+          background: url("../img/like-gr.svg") no-repeat center;
+          width: 20px !important;
+          height: 20px !important;
+          background-size: cover;
+          display: block;
+          border: none;
+          &:hover {
+            cursor: pointer;
+            background: url("../img/like-red.svg");
+          }
+        }
+      }
+      &-img {
+        width: 34px !important;
+        height: 34px !important;
+        margin-right: 20px;
+      }
+      &-top {
+        height: 50px;
+        font-family: "Open Sans Semibold";
+        font-style: normal;
+        font-size: 14px;
+        color: #222222;
+      }
+    }
+    &-btn {
+      &-show {
+        font-family: "Open Sans Semibold";
+        font-style: normal;
+        font-size: 13px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #444444;
+        width: 180px;
+        height: 36px;
+        border: 1px solid #E94646;
+        border-radius: 30px;
+        background-color: #FFFFFF;
+        transition: color .3s, background-color .3s;
+        margin-top: 30px;
+        margin-left: 30px;
+        &:hover {
+          background-color: #E94646;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+    &-plan {
+      width: 100%;
+      &-p {
+        width: 100%;
+        border-bottom: 1px solid #EEEEEE;
+        height: 51px;
+        font-family: "Open Sans Semibold";
+        font-style: normal;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #222222;
+      }
+      &-title {
+        font-family: "Open Sans Semibold";
+        font-style: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #222222;
+        margin-top: 30px;
+      }
+      &-img {
+        display: block;
+        margin: 34px auto auto;
+      }
+      &-inner {
+        display: flex;
+        justify-content: center;
+      }
+      &-btn {
+        &-cost {
+          width: 306px;
+          height: 60px;
+          font-family: "Open Sans Semibold";
+          font-style: normal;
+          font-size: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: #FFFFFF;
+          background-color: #E94646;
+          border-radius: 30px;
+          border: none;
+          transition: background-color .3s;
+          margin-right: 30px;
+          &:hover {
+            cursor: pointer;
+            background-color: #FF5050;
+          }
+        }
+        &-like {
+          font-family: "Open Sans Semibold";
+          font-style: normal;
+          font-size: 13px;
+          line-height: 18px;
+          border: none;
+          background: none;
+          color: #444444;
+          display: flex;
+          align-items: center;
+          &:hover {
+            cursor: pointer;
+          }
+          &:hover::before {
+            content: url("../img/like-red.svg");
+          }
+          &::before {
+            content: url("../img/like-gr.svg");
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+        }
+      }
     }
   }
 }
@@ -1536,6 +1763,7 @@
 .house {
   max-width: 1360px;
   margin: 60px auto auto;
+  position: relative;
   &__title {
     font-family: 'Open Sans Bold';
     font-style: normal;
@@ -1545,13 +1773,59 @@
     margin-bottom: 60px;
   }
   &__slider {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    &-wrap {
+      position: relative;
+      overflow-x: hidden;
+    }
+    &-inner {
+      display: flex;
+      position: relative;
+      transition: all .3s;
+      left: 0;
+      padding: 20px 0 20px 20px;
+    }
+    &-btn {
+      &-prev {
+        background: url("../img/prev-w.svg") no-repeat center;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 200px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-size: 280%;
+        border: none;
+        &:hover {
+          background: url("../img/b-red-arrow-btn.svg") no-repeat center;
+          cursor: pointer;
+        }
+      }
+      &-next {
+        background: url("../img/next-w.svg") no-repeat center;
+        z-index: 1;
+        position: absolute;
+        right: -20px;
+        top: 200px;
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+        background-size: 280%;
+        border: none;
+        &:hover {
+          background: url("../img/b-red-arrow-btn.svg") no-repeat center;
+          transform: rotate(180deg);
+          cursor: pointer;
+        }
+      }
+    }
   }
   &__card {
     text-decoration: none;
     border: 1px solid #E3E3E3;
     transition: box-shadow .3s;
+    margin-right: 18px;
     &:hover {
       box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
     }
