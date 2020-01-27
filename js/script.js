@@ -27,8 +27,13 @@ const sliderH = () => {
     const btnHprev = document.querySelector(".slider-h__btn-prev");
     const btnWprev = document.querySelector(".slider-w__btn-prev");
     const btnWnext = document.querySelector(".slider-w__btn-next");
+
     let step = 0;
     let backStep = 0;
+
+    //Ссылки на видео
+    let link1 = "https://www.youtube.com/embed/NqXFHeaxN7w";
+    let link2 = "https://www.youtube.com/embed/wjPrS76cMDY";
 
     //Настройки событий кнопок
     const sliderMotionBack = () => {
@@ -66,24 +71,32 @@ const sliderH = () => {
             backStep = 0;
             sliderW.style.backgroundImage = `url("./img/h0.png")`
         }
+
+        if (backStep === 2) {
+            sliderWYouTube.classList.add("slider-w-video_on");
+            sliderVideoFrame.src=link1+"?autoplay=1&loop=1&&playlist=Video_ID";
+        }
     };
 
     // Включение и выключение видео и настройка пути
     for (let i = 0; i < sliderHItemsVideo.length; i++) {
             sliderHItemsVideo[i].addEventListener("click", ()=>{
               sliderWYouTube.classList.add("slider-w-video_on");
-              //Ссылки на видео
-              let link1 = "https://www.youtube.com/embed/NqXFHeaxN7w";
-              let link2 = "https://www.youtube.com/embed/wjPrS76cMDY";
-              //    Первое видео
-              if (sliderHItemsVideo[i].classList.contains("video_1")) {
-                  sliderVideoFrame.src=link1+"?autoplay=1&loop=1&&playlist=Video_ID";
-                }
-              //  Второе видео
-              if (sliderHItemsVideo[i].classList.contains("video_2")) {
-                  sliderVideoFrame.src=link2+"?autoplay=1&loop=1&&playlist=Video_ID";
-              }
+
+                  //    Первое видео
+                  if (sliderHItemsVideo[i].classList.contains("video_1")) {
+                      sliderVideoFrame.src=link1+"?autoplay=1&loop=1&&playlist=Video_ID";
+                  }
+                  //  Второе видео
+                  if (sliderHItemsVideo[i].classList.contains("video_2")) {
+                      sliderVideoFrame.src=link2+"?autoplay=1&loop=1&&playlist=Video_ID";
+                  }
             });
+
+            // btnWnext.addEventListener("click", ()=> {
+            //     sliderWYouTube.classList.add("slider-w-video_on");
+            //
+            // })
         }
 
     //Действия с кнопками
