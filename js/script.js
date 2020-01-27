@@ -15,11 +15,12 @@ const burgerMotion = () => {
 burgerMotion();
 
 //Slider
-//slider=slider-h>line=slider-h__list>slide=slider-h__item
 const sliderH = () => {
     let sliderHItems = document.querySelectorAll(".slider-h__item");
+    let sliderHItemsVideo = document.querySelectorAll(".slider-h__item_vid");
     let sliderHList = document.querySelector(".slider-h__list");
     let sliderW = document.querySelector(".slider-w");
+    let sliderWYouTube = document.querySelector(".slider-w-video");
 
     const btnHnext = document.querySelector(".slider-h__btn-next");
     const btnHprev = document.querySelector(".slider-h__btn-prev");
@@ -41,7 +42,6 @@ const sliderH = () => {
     const sliderMotionForward = () => {
         step = step - 91;
         sliderHList.style.top = step+'px';
-
         if (step === -364) {
             step = 0;
             sliderHList.style.top = step +'px';
@@ -66,6 +66,13 @@ const sliderH = () => {
         }
     };
 
+
+    for (let i = 0; i < sliderHItemsVideo.length; i++) {
+            sliderHItemsVideo[i].addEventListener("click", ()=>{
+              sliderWYouTube.classList.add("slider-w-video_on");
+            });
+        }
+
     btnHprev.addEventListener("click", sliderMotionBack);
     btnHnext.addEventListener("click", sliderMotionForward);
     btnWprev.addEventListener("click", sliderMotionWBack);
@@ -79,6 +86,10 @@ const sliderH = () => {
             if (sliderHItems[i].classList.contains('active')) {
                 sliderW.style.backgroundImage = `url("./img/h${i}.png")`;
                 sliderHItems[i].classList.toggle("active");
+            }
+
+            if (sliderHItems[i].classList.contains('video-off')) {
+                sliderWYouTube.classList.remove("slider-w-video_on");
             }
         });
     }

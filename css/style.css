@@ -324,6 +324,7 @@
   justify-content: space-between;
   margin-right: 30px;
   background-size: cover;
+  position: relative;
 }
 .slider-w button {
   width: 40px;
@@ -334,6 +335,17 @@
 }
 .slider-w button:hover {
   cursor: pointer;
+}
+.slider-w-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 560px;
+  width: 781px;
+  display: none;
+}
+.slider-w-video_on {
+  display: block;
 }
 .slider-w__btn-prev {
   margin-left: 20px;
