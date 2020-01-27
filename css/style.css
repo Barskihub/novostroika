@@ -277,6 +277,9 @@
 .slider-h__item_vid:hover::after {
   content: url("../img/red-play.svg");
 }
+.slider-h__item_outline .slider-h__item-img {
+  outline: 3px solid #E94646;
+}
 .slider-h__item-img {
   outline: 3px solid transparent;
   transition: outline 0.3s;

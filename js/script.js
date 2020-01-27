@@ -30,6 +30,7 @@ const sliderH = () => {
     let step = 0;
     let backStep = 0;
 
+    //Настройки событий кнопок
     const sliderMotionBack = () => {
         step = step + 91;
         sliderHList.style.top = step+'px';
@@ -67,27 +68,28 @@ const sliderH = () => {
         }
     };
 
-
+    // Включение и выключение видео и настройка пути
     for (let i = 0; i < sliderHItemsVideo.length; i++) {
             sliderHItemsVideo[i].addEventListener("click", ()=>{
               sliderWYouTube.classList.add("slider-w-video_on");
-
+              //    Первое видео
               if (sliderHItemsVideo[i].classList.contains("video_1")) {
-                  sliderVideoFrame.src="https://www.youtube.com/embed/NqXFHeaxN7w";
+                  sliderVideoFrame.src="https://www.youtube.com/embed/NqXFHeaxN7w?autoplay=1&loop=1&&playlist=Video_ID";
                 }
-
+              //  Второе видео
               if (sliderHItemsVideo[i].classList.contains("video_2")) {
-                  sliderVideoFrame.src="https://www.youtube.com/embed/wjPrS76cMDY";
+                  sliderVideoFrame.src="https://www.youtube.com/embed/wjPrS76cMDY?autoplay=1&loop=1&&playlist=Video_ID";
               }
             });
         }
 
+    //Действия с кнопками
     btnHprev.addEventListener("click", sliderMotionBack);
     btnHnext.addEventListener("click", sliderMotionForward);
     btnWprev.addEventListener("click", sliderMotionWBack);
     btnWnext.addEventListener("click", sliderMotionWForward);
 
-
+    //Cмена слайдов
     for (let i = 0; i < sliderHItems.length; i++) {
         sliderHItems[i].addEventListener("click", () => {
             sliderHItems[i].classList.toggle("active");
@@ -99,6 +101,7 @@ const sliderH = () => {
 
             if (sliderHItems[i].classList.contains('video-off')) {
                 sliderWYouTube.classList.remove("slider-w-video_on");
+                sliderVideoFrame.src="";
             }
         });
     }

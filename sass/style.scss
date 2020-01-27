@@ -289,6 +289,9 @@
       &_vid:hover::after {
         content: url("../img/red-play.svg");
       }
+      &_outline &-img {
+        outline: 3px solid #E94646;
+      }
       &-img {
         outline: 3px solid transparent;
         transition: outline .3s;
