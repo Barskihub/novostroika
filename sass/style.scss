@@ -6,6 +6,13 @@
   box-sizing: border-box;
   outline: none;
 }
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 //FONTS
 //Regular
 @font-face {
@@ -232,6 +239,7 @@
       margin-bottom: 25px;
       &-span {
         font-size: 28px;
+        color: #E94646;
       }
     }
     &-img {

@@ -7,6 +7,14 @@
   outline: none;
 }
 
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 @font-face {
   font-family: "Open Sans Regular";
   src: url("../fonts/OpenSans-Regular.eot");
@@ -217,6 +225,7 @@
 }
 .review__p-cost-span {
   font-size: 28px;
+  color: #E94646;
 }
 .review__p-img {
   margin-right: 10px;
