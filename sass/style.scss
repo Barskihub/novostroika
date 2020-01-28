@@ -2254,6 +2254,9 @@
     justify-content: space-between;
     &-img {
       width: 317px;
+      &_active {
+        transform: scale(2.5);
+      }
     }
   }
   &__btn {

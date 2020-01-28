@@ -2149,6 +2149,9 @@
 .build__box-img {
   width: 317px;
 }
+.build__box-img_active {
+  transform: scale(2.5);
+}
 .build__btn-more {
   font-family: "Open Sans bold";
   font-style: normal;
