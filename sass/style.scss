@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 //FONTS
 //Regular
@@ -2019,6 +2020,9 @@
         &-input {
           width: 220px;
         }
+        &-inner {
+          width: 100%;
+        }
       }
       &-title {
         font-size: 20px;
@@ -2664,7 +2668,7 @@
       }
       &-inner {
         width: 410%;
-        padding-left: 0;
+        padding-left: 7px;
       }
     }
   }
@@ -2777,6 +2781,11 @@
       }
     }
   }
+  &__img {
+    background: url("../img/send-img.svg") no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
   &__p {
     font-family: "Open Sans Regular";
     font-style: normal;
@@ -2784,6 +2793,58 @@
     color: #999999;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .send {
+    padding-left: 39px;
+    padding-right: 39px;
+    &__img {
+      width: 816px;
+      height: 530px;
+    }
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 830px) {
+  .send {
+    padding-left: 20px;
+    padding-right: 20px;
+    &__img {
+      width: 90vw;
+      height: 79vw;
+    }
+    &__form {
+      flex-direction: column;
+      justify-content: left;
+      align-items: start;
+      &-btn {
+        width: 238px;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      &-input {
+        margin-bottom: 20px;
+      }
+    }
+    &__title {
+      width: 100%;
+      font-size: 14px;
+    }
+    &__subtitle {
+      width: 90%;
+      font-size: 13px;
+    }
+    &__box {
+      height: auto;
+      width: 90vw;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 }
 //Footer
@@ -2878,5 +2939,224 @@
     &-link {
       margin-left: 20px;
     }
+  }
+}
+@media (max-width: 1360px) {
+  .footer {
+    padding-left: 39px;
+    padding-right: 39px;
+    &__link {
+      display: none;
+    }
+    &__social {
+      margin-top: 0;
+    }
+    &__nav {
+      margin-left: 0;
+    }
+    &__box {
+      margin-left: 0;
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  }
+}
+@media (max-width: 730px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    &__inner {
+      justify-content: space-between;
+    }
+    &__nav {
+      margin-top: 30px;
+      &-title {
+        font-size: 14px;
+      }
+      &-link {
+        font-size: 12px;
+      }
+      &_ord-2 {
+        order: 2;
+      }
+      &_ord-3 {
+        order: 3;
+      }
+      &_ord-4 {
+        order: 4;
+      }
+    }
+    &__form {
+      width: 280px;
+    }
+    &__search {
+      width: 100%;
+    }
+    &__box {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: column;
+      order: 1;
+      width: 100%;
+    }
+    &__social {
+      margin-top: 30px;
+      &-link {
+        margin-left: 0;
+        margin: 10px;
+      }
+    }
+  }
+}
+//Popup
+.call {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: none;
+  &_active {
+    display: block;
+  }
+    &__form {
+      display: flex;
+      align-items: center;
+      width: 320px;
+      height: 466px;
+      flex-direction: column;
+      background-color: #ffffff;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+      position: relative;
+      &-title {
+        font-family: "Open Sans Bold";
+        font-style: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: #222222;
+        position: relative;
+        width: 210px;
+        margin-top: 20px;
+        margin-left: 27px;
+        margin-right: auto;
+        margin-bottom: 10px;
+        &::before {
+          content: "";
+          background-color: #FF5050;
+          position: absolute;
+          width: 4px;
+          height: 38px;
+          top: 6px;
+          left: -7px;
+        }
+      }
+      &-label {
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        font-family: "Open Sans Semibold";
+        font-style: normal;
+        font-size: 13px;
+        color: #222222;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 0;
+        &-star {
+          color: #E94646;
+        }
+      }
+      &-input {
+        background: #F2F2F2;
+        border: 1px solid #E3E3E3;
+        box-sizing: border-box;
+        border-radius: 30px;
+        font-family: "Open Sans Semibold";
+        font-style: normal;
+        font-size: 13px;
+        line-height: 18px;
+        text-align: right;
+        color: #999999;
+        width: 280px;
+        height: 60px;
+        padding-right: 30px;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          /* display: none; <- Crashes Chrome on hover */
+          -webkit-appearance: none;
+          appearance: none;
+          -moz-appearance: none;
+          margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+        }
+        &:focus {
+          text-align: left;
+          padding-left: 30px;
+        }
+      }
+      &-btn {
+        width: 280px;
+        height: 60px;
+        background-color: #E94646;
+        border-radius: 30px;
+        border: none;
+        font-family: "Open Sans Semibold";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        transition: background-color .3s;
+        margin-top: 30px;
+        &:hover {
+          cursor: pointer;
+          background-color: #FF5050;
+        }
+        &::before {
+          content: url("../img/fly.svg");
+          margin-right: 10px;
+          margin-top: 3px;
+        }
+      }
+      &-btn {
+        &-close {
+          background: url("../img/close.svg") no-repeat;
+          background-position: center;
+          width: 44px;
+          height: 44px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border: none;
+          background-color: #F2F2F2;
+          transition: all .3s;
+          &:hover {
+            cursor: pointer;
+            background: url("../img/close-white.svg") no-repeat;
+            background-position: center;
+            background-color: #E94646;
+          }
+        }
+      }
+    }
+  &__p {
+    font-family: "Open Sans Regular";
+    font-style: normal;
+    font-size: 12px;
+    color: #999999;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
   }
 }

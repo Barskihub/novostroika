@@ -135,7 +135,6 @@ const sliderReview = () => {
             }
         });
     }
-    console.log(sliderHItems);
 };
 sliderReview();
 
@@ -145,7 +144,7 @@ const sliderHouse = () => {
     const houseSliderBtnLeft = document.querySelector(".house__slider-btn-prev");
     const houseSliderBtnRight = document.querySelector(".house__slider-btn-next");
 
-    let houseSlides = document.querySelectorAll(".house__card").length;
+    let houseSlides = document.querySelectorAll(".house__card");
     let step = 0;
 
 
@@ -226,4 +225,20 @@ const videoDesk = () => {
     }
 };
 videoDesk();
+//Popup Show
+const popup = () => {
+  const call = document.querySelector(".call");
+  const popupShow = document.querySelectorAll(".popup-show");
+  const btnClose = document.querySelector(".call__form-btn-close");
 
+  for (let i = 0; i < popupShow.length; i++) {
+      popupShow[i].addEventListener("click", () => {
+          call.classList.add("call_active");
+      })
+  }
+  btnClose.addEventListener("click", () => {
+      call.classList.remove("call_active");
+  })
+};
+
+popup();

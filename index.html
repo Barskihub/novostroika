@@ -155,7 +155,7 @@
                     <img src="img/company-icon-rev.png" alt="Иконка компании" class="review__company-img">
                     <a href="tel:+79997767766" class="review__company-link">+ 7 (999) 776-77-66</a>
                 </div>
-                <button class="review__btn">
+                <button class="review__btn popup-show">
                     <img src="img/review-phone.svg" alt="Заказать звонок" class="review__btn-img">
                     Заказать звонок
                 </button>
@@ -389,7 +389,7 @@
                             </h5>
                             <img src="img/plan.svg" alt="Схема" class="plans__info-plan-img">
                             <div class="plans__info-plan-inner">
-                                <button class="plans__info-plan-btn-cost">
+                                <button class="plans__info-plan-btn-cost popup-show">
                                     Узнать цену
                                 </button>
                                 <button class="plans__info-plan-btn-like">
@@ -625,7 +625,7 @@
                             </h5>
                             <img src="img/plan.svg" alt="Схема" class="plans__info-plan-img">
                             <div class="plans__info-plan-inner">
-                                <button class="plans__info-plan-btn-cost">
+                                <button class="plans__info-plan-btn-cost popup-show">
                                     Узнать цену
                                 </button>
                                 <button class="plans__info-plan-btn-like">
@@ -826,7 +826,7 @@
                     <p class="desc__content-post">
                         Автор сайта.
                     </p>
-                    <button class="desc__content-btn">
+                    <button class="desc__content-btn popup-show">
                         <img src="img/review-phone.svg" alt="Заказать звонок" class="desc__content-btn-img">
                         Получить консультацию
                     </button>
@@ -1282,7 +1282,7 @@
             <button class="docs__btn-more">
                 Показать еще <span class="docs__btn-more-span">7</span> документов
             </button>
-            <button class="docs__btn-call">Получить консультацию юриста</button>
+            <button class="docs__btn-call popup-show">Получить консультацию юриста</button>
         </section>
         <section class="credit">
             <div class="credit__cl">
@@ -1671,7 +1671,8 @@
         </section>
         <section class="send">
             <div class="send__inner">
-                <img src="img/send-img.svg" alt="Изображение" class="send__img">
+                <div class="send__img">
+                </div>
                 <div class="send__box">
                     <h2 class="send__title">
                         «ПРОНовостройки – это не только обзоры жилых комплексов, это бесплатный сервис поиска квартир, который экономит
@@ -1706,7 +1707,7 @@
     </main>
     <footer class="footer">
         <div class="footer__inner">
-            <nav class="footer__nav">
+            <nav class="footer__nav footer__nav_ord-2">
                 <h3 class="footer__nav-title">
                     Новостройки
                 </h3>
@@ -1725,7 +1726,7 @@
                     </li>
                 </ul>
             </nav>
-            <nav class="footer__nav">
+            <nav class="footer__nav footer__nav_ord-3">
                 <h3 class="footer__nav-title">
                     Популярное
                 </h3>
@@ -1741,7 +1742,7 @@
                     </li>
                 </ul>
             </nav>
-            <nav class="footer__nav">
+            <nav class="footer__nav footer__nav_ord-4">
                 <h3 class="footer__nav-title">
                     Интересное
                 </h3>
@@ -1786,6 +1787,35 @@
             </div>
         </div>
     </footer>
+    <div class="call">
+        <form class="call__form">
+            <button class="call__form-btn-close">
+
+            </button>
+            <h1 class="call__form-title">
+                Получить <br>
+                консультацию юриста
+            </h1>
+                <label for="send-name-pop" class="call__form-label">
+                    Ваше имя
+                    <input type="text"  name="send-pop" class="call__form-input" id="send-name-pop"
+                           placeholder="Ваше имя"
+                           required>
+                </label>
+                <label for="send-phone-pop" class="call__form-label">
+                    <span>Контактный телефон<span class="send__form-label-star">*</span></span>
+                    <input type="number"  name="send-pop" class="call__form-input" id="send-phone-pop"
+                           placeholder="+7"
+                           required>
+                </label>
+                <button type="submit" class="call__form-btn">
+                    Отправить заявку
+                </button>
+            <p class="call__p">
+                Указывая свои персональные данные в полях заявки, вы соглашаетесь на их обработку.
+            </p>
+        </form>
+    </div>
 </div>
 </body>
 <script src="js/script.js"></script>
