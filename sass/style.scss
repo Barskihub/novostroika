@@ -2498,9 +2498,9 @@
   }
   &__slider {
     position: relative;
+    overflow-x: hidden;
     &-wrap {
       position: relative;
-      overflow-x: hidden;
     }
     &-inner {
       display: flex;
@@ -2619,6 +2619,54 @@
   .house {
     margin-left: 39px;
     margin-right: 39px;
+    &__slider {
+      &-inner {
+        width: 135%;
+      }
+    }
+    &__card {
+      &-img {
+        width: 100%;
+        &-wrap {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width:950px) {
+  .house {
+    &__slider {
+      &-inner {
+        width: 200%;
+      }
+    }
+  }
+}
+@media (max-width:689px) {
+  .house {
+    margin-left: 20px;
+    margin-right: 20px;
+    &__card {
+      width: 25%;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__slider {
+      &-btn {
+        &-prev {
+          left: -15px;
+        }
+        &-next {
+          right: -15px;
+        }
+      }
+      &-inner {
+        width: 410%;
+        padding-left: 0;
+      }
+    }
   }
 }
 //Send
