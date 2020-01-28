@@ -175,14 +175,55 @@ sliderHouse();
 const plans = () => {
     const plansItems = document.querySelectorAll(".plans__item");
     const plansInfo = document.querySelectorAll(".plans__info");
+    const plansWrap = document.querySelectorAll(".plans__item-wrap");
 
     for (let i = 0; i < plansItems.length; i++) {
         plansItems[i].addEventListener("click", () => {
             plansInfo[i].classList.toggle("plans__info_active");
             plansItems[i].classList.toggle("plans__item_active");
+            plansWrap[i].classList.toggle("plans__item-wrap_active");
+
+            if (plansWrap[i].classList.contains("plans__item-wrap_right")) {
+                plansInfo[i].classList.add("plans__info_right");
+            }
         });
     }
 };
 plans();
+//Benefits < 689px
+const benefits = () => {
+    const title = document.querySelectorAll(".benefits__article-title");
+    const article = document.querySelectorAll(".benefits__article");
 
+    for (let i = 0; i < title.length; i++) {
+        title[i].addEventListener('click', () => {
+            article[i].classList.toggle('benefits__article_show');
+        })
+    }
+};
+benefits();
+//features
+const features = () => {
+    const title = document.querySelectorAll(".feature__item-title");
+    const content = document.querySelectorAll(".feature__item");
+
+    for (let i = 0; i < title.length; i++) {
+        title[i].addEventListener('click', () => {
+            content[i].classList.toggle('feature__item_show');
+        })
+    }
+};
+features();
+//VideoDesc
+const videoDesk = () => {
+    const deskVideo = document.querySelectorAll(".desc__content-video");
+    const youTube = document.querySelectorAll(".desc__content-video-youtube");
+
+    for (let i = 0; i < deskVideo.length; i++) {
+        deskVideo[i].addEventListener("click", () => {
+            youTube[i].classList.add("desc__content-video-youtube_active");
+        })
+    }
+};
+videoDesk();
 
