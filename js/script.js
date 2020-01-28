@@ -217,12 +217,22 @@ features();
 const videoDesk = () => {
     const deskVideo = document.querySelectorAll(".desc__content-video");
     const youTube = document.querySelectorAll(".desc__content-video-youtube");
+    const link = document.querySelectorAll(".desc-youtube");
+
+    const link1 = "https://www.youtube.com/embed/zkfXyNRnIqU?autoplay=1&loop=1&&playlist=Video_ID";
+    const link2 = "https://www.youtube.com/embed/tfsNHeVVhdQ?autoplay=1&loop=1&&playlist=Video_ID";
 
     for (let i = 0; i < deskVideo.length; i++) {
         deskVideo[i].addEventListener("click", () => {
             youTube[i].classList.add("desc__content-video-youtube_active");
-        })
+        });
     }
+    deskVideo[0].addEventListener("click", () => {
+        link[0].src = link1;
+    });
+    deskVideo[1].addEventListener("click", () => {
+        link[1].src = link2;
+    });
 };
 videoDesk();
 //Popup Show
